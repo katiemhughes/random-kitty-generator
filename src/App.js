@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  state = {
+    kitty: null,
+  }
+
+  handleFetch = () => {
+
+    fetch("https://api.thecatapi.com/v1/images/search")
+    .then((response) => response.json())
+    .then((data) => this.setState({ kitty: data[0] }))
+  };
+
+  render () {
+    const { kitty } = this.state
+    return (
+      <div className="App">
+        <h1>Random kitty generator</h1>
+        {kitty && <img src={kitty.url} />}
+        <button onClick={this.handleFetch}>Next picture</button>
+      </div>
+    )
+  }
+
 }
+
+const Kitty = ({ kitty }) => (
+  <div>
+    <h3>{kitty.value}</h3>
+  </div>
+)
 
 export default App;
