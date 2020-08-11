@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/random-kitty-generator/static/css/main.02ebfaae.chunk.css",
+    "main.js": "/random-kitty-generator/static/js/main.7a99d938.chunk.js",
+    "main.js.map": "/random-kitty-generator/static/js/main.7a99d938.chunk.js.map",
+    "runtime-main.js": "/random-kitty-generator/static/js/runtime-main.1d0d4c00.js",
+    "runtime-main.js.map": "/random-kitty-generator/static/js/runtime-main.1d0d4c00.js.map",
+    "static/js/2.3ac9fd7f.chunk.js": "/random-kitty-generator/static/js/2.3ac9fd7f.chunk.js",
+    "static/js/2.3ac9fd7f.chunk.js.map": "/random-kitty-generator/static/js/2.3ac9fd7f.chunk.js.map",
+    "index.html": "/random-kitty-generator/index.html",
+    "precache-manifest.8d8d2ebb872f33bc34be89ab5ef4adf6.js": "/random-kitty-generator/precache-manifest.8d8d2ebb872f33bc34be89ab5ef4adf6.js",
+    "service-worker.js": "/random-kitty-generator/service-worker.js",
+    "static/css/main.02ebfaae.chunk.css.map": "/random-kitty-generator/static/css/main.02ebfaae.chunk.css.map",
+    "static/js/2.3ac9fd7f.chunk.js.LICENSE.txt": "/random-kitty-generator/static/js/2.3ac9fd7f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/random-kitty-generator/static/media/pawwallpaper.2ea3ca68.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d0d4c00.js",
+    "static/js/2.3ac9fd7f.chunk.js",
+    "static/css/main.02ebfaae.chunk.css",
+    "static/js/main.7a99d938.chunk.js"
+  ]
+}
