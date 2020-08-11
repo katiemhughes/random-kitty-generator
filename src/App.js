@@ -8,7 +8,6 @@ class App extends Component {
   }
 
   handleFetch = () => {
-
     fetch("https://api.thecatapi.com/v1/images/search")
     .then((response) => response.json())
     .then((data) => this.setState({ kitty: data[0] }))
@@ -18,7 +17,7 @@ class App extends Component {
     const { kitty } = this.state
     return (
       <div className="App">
-        <h1>Random kitty generator</h1>
+        <h1>Random Kitty Generator</h1>
         {kitty && <img src={kitty.url} />}
         <button onClick={this.handleFetch}>Next picture</button>
       </div>
